@@ -4,6 +4,7 @@ estão utilizando e quem são seus colaboradores.
 
 ### BREVE INTRODUÇÃO A MODELAGEM MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
 <details>
+ 
 ### Entidades e Atributos:
 - Entidade: É uma representação de uma coisa ou conceito no mundo real ou abstrato. Exemplo: Empresa, Colaborador, Tecnologia.
 - Atributos: São as características ou propriedades de uma entidade. Exemplo: uma entidade Empresa pode ter atributos como nome, email e cnpj.
