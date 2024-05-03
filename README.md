@@ -2,7 +2,7 @@
 O sistema irá auxiliar na avaliação de quais são as tecnologias que as empresas parceiras 
 estão utilizando e quem são seus colaboradores.
 
-### BREVE INTRODUÇÃO A MODELAGEM MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
+### BREVE INTRODUÇÃO MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
 <details>
  
 ### Entidades e Atributos:
