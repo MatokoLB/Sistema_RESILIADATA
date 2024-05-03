@@ -1,8 +1,26 @@
-
 # 💻Sistema_RESILIADATA
 O sistema irá auxiliar na avaliação de quais são as tecnologias que as empresas parceiras 
 estão utilizando e quem são seus colaboradores.
 
+### BREVE INTRODUÇÃO A MODELAGEM MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
+<details>
+### Entidades e Atributos:
+- Entidade: É uma representação de uma coisa ou conceito no mundo real ou abstrato. Exemplo: Empresa, Colaborador, Tecnologia.
+- Atributos: São as características ou propriedades de uma entidade. Exemplo: uma entidade Empresa pode ter atributos como nome, email e cnpj.
+ 
+### Relacionamentos e Cardinalidade:
+- Relacionamento: É uma associação entre duas ou mais entidades. Pode ser um relacionamento entre uma Empresa e seus Colaboradores.
+- Cardinalidade: Refere-se à natureza e ao grau do relacionamento entre entidades. Por exemplo:
+1:N (Um para Muitos): Uma entidade está associada a várias outras, como uma Empresa para muitos Colaboradores.
+N:N (Muitos para Muitos): Muitas entidades estão associadas a muitas outras, como várias Empresas usando várias Tecnologias.
+1:1 (Um para Um): Uma entidade está associada a apenas uma outra entidade, como um Colaborador sendo associado a um único id_empresa.
+
+### Modelos de Banco de Dados:
+- Modelo Conceitual: É uma representação abstrata do banco de dados, focada nas entidades, atributos e relacionamentos. Não inclui detalhes técnicos, como tipos de dados ou chaves primárias.
+- Modelo Lógico: Transforma o modelo conceitual em um modelo mais detalhado, especificando tipos de dados, chaves primárias e estrangeiras, bem como restrições de integridade.
+- Modelo Físico: É a implementação real do banco de dados, com base nos modelos anteriores, incluindo a definição de tabelas, índices e detalhes específicos do sistema de gerenciamento de banco de dados (SGBD) escolhido.
+Esses conceitos básicos são fundamentais para projetar e implementar um banco de dados eficaz. À medida que você ganha experiência em modelagem de banco de dados, pode explorar tópicos mais avançados, como normalização, desnormalização, otimização de consultas e design de índice.
+</details>
 
 ## 📝MODELO CONCEITUAL
 
@@ -17,7 +35,7 @@ estão utilizando e quem são seus colaboradores.
 </div>
 
 
-### PERGUNTAS SOBRE O MODELO 🐧- Tux
+### PERGUNTAS SOBRE O MODELO 🐧[Tux]
 
 #### **QUAIS SÃO AS ENTIDADES NECESSÁRIAS ?**
 As entidades necessárias são:
