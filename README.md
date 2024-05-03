@@ -5,9 +5,26 @@ estão utilizando e quem são seus colaboradores.
 ### BREVE INTRODUÇÃO MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
 <details>
  
+### O que é Modelagem de Dados?
+- Processo de estruturar, definir e projetar um banco de dados para armazenar e gerenciar dados de forma eficiente.
+- Inclui o desenvolvimento de modelos conceituais, lógicos e físicos.
+
+### Modelos de Banco de Dados:
+- Modelo Conceitual: É uma representação abstrata do banco de dados, focada nas entidades, atributos e relacionamentos. Não inclui detalhes técnicos, como tipos de dados ou chaves primárias.
+- Modelo Lógico: Transforma o modelo conceitual em um modelo mais detalhado, especificando tipos de dados, chaves primárias e estrangeiras, bem como restrições de integridade.
+- Modelo Físico: É a implementação real do banco de dados, com base nos modelos anteriores, incluindo a definição de tabelas, índices e detalhes específicos do sistema de gerenciamento de banco de dados (SGBD) escolhido.
+
+### O que é SGBD?
+- Sistema de Gerenciamento de Banco de Dados (SGBD): É um software que controla a criação, manutenção e uso de um banco de dados.
+- Ele permite aos usuários criar, manipular e consultar dados de forma organizada.
+- Exemplos: MySQL, PostgreSQL, SQL Server, Oracle.
+
 ### Entidades e Atributos:
 - Entidade: É uma representação de uma coisa ou conceito no mundo real ou abstrato. Exemplo: Empresa, Colaborador, Tecnologia.
 - Atributos: São as características ou propriedades de uma entidade. Exemplo: uma entidade Empresa pode ter atributos como nome, email e cnpj.
+- Tipos de Dados: Definem o tipo de informação que um campo em uma tabela pode armazenar. Exemplos: int:,float,decimal,varchar,date,boolean entre outros. Escolher o tipo de dado correto para cada campo é importante para garantir eficiência e integridade dos dados.
+- Chave Primária: Um campo ou conjunto de campos que identificam de forma única cada registro em uma tabela. Geralmente é um campo com valores exclusivos, como um id autoincrementável. Uma chave primária deve ser imutável e não deve aceitar valores nulos.
+- Chave Estrangeira: Uma chave estrangeira é um campo ou conjunto de campos em uma tabela que faz referência à chave primária de outra tabela. Estabelece um relacionamento entre as duas tabelas, permitindo que a tabela que possui a chave estrangeira se beneficie dos dados armazenados na tabela referenciada.
  
 ### Relacionamentos e Cardinalidade:
 - Relacionamento: É uma associação entre duas ou mais entidades. Pode ser um relacionamento entre uma Empresa e seus Colaboradores.
@@ -16,11 +33,12 @@ estão utilizando e quem são seus colaboradores.
 N:N (Muitos para Muitos): Muitas entidades estão associadas a muitas outras, como várias Empresas usando várias Tecnologias.
 1:1 (Um para Um): Uma entidade está associada a apenas uma outra entidade, como um Colaborador sendo associado a um único id_empresa.
 
-### Modelos de Banco de Dados:
-- Modelo Conceitual: É uma representação abstrata do banco de dados, focada nas entidades, atributos e relacionamentos. Não inclui detalhes técnicos, como tipos de dados ou chaves primárias.
-- Modelo Lógico: Transforma o modelo conceitual em um modelo mais detalhado, especificando tipos de dados, chaves primárias e estrangeiras, bem como restrições de integridade.
-- Modelo Físico: É a implementação real do banco de dados, com base nos modelos anteriores, incluindo a definição de tabelas, índices e detalhes específicos do sistema de gerenciamento de banco de dados (SGBD) escolhido.
-Esses conceitos básicos são fundamentais para projetar e implementar um banco de dados eficaz. À medida que você ganha experiência em modelagem de banco de dados, pode explorar tópicos mais avançados, como normalização, desnormalização, otimização de consultas e design de índice.
+### Ferramentas de Modelagem
+- Ferramentas de software que auxiliam na criação de modelos de banco de dados, como diagramas de entidade-relacionamento (ERD), e na geração de scripts SQL.
+- Permitem a visualização e o design eficiente de modelos de dados.
+- Exemplos: MySQL Workbench, ER/Studio, SQL Server Management Studio, Lucidchart.
+
+Esses tópicos fornecem uma visão geral dos conceitos essenciais para a modelagem de banco de dados. À medida que você ganha experiência em modelagem de banco de dados, pode explorar tópicos mais avançados, como normalização, desnormalização, otimização de consultas e design de índice.
 </details>
 
 ## 📝MODELO CONCEITUAL
@@ -120,7 +138,7 @@ id_empresa | id_tecnologia
 1 | 2 
 2 | 2  
 
-#### *QUAIS OUTROS ATRIBUTOS AS ENTIDADES PODERIAM CONTER* ?
+#### *QUAIS SÃO OS DEMAIS ATRIBUTOS QUE AS ENTIDADES PODERIAM CONTER?* ?
 
 Dependendo dos requisitos do seu sistema, Podemos adicionar mais atributos para cada entidade a fim de torná-las mais completas e atender às necessidades sistema. Abaixo estão alguns exemplos de atributos adicionais para cada entidade:
 
@@ -144,7 +162,6 @@ Dependendo dos requisitos do seu sistema, Podemos adicionar mais atributos para 
 - versao (varchar🔡): Versão específica da tecnologia usada pela empresa.
 - descricao (varchar🔡): Descrição da tecnologia ou de suas características.
 - data_lancamento (date📆): Data de lançamento ou criação da tecnologia.
-- fabricante (varchar🔡): Fabricante ou provedor da tecnologia.
 ```
 
 ###### 🧑‍💼Colaborador
@@ -160,8 +177,8 @@ Dependendo dos requisitos do seu sistema, Podemos adicionar mais atributos para 
 </details>
 
 
-### QUERRYS PODERIAM RESPONDER A QUESTÃO INICIAL
-Para responder à pergunta sobre as tecnologias que as empresas parceiras estão utilizando e quem são seus colaboradores, temos que criar um script SQL para definir o banco de dados com as entidades: 🏬Empresa, ⚛️Tecnologia, 🧑‍💼Colaborador e a tabela de junção entre 🏬Empresa e ⚛️Tecnologia,em seguida criaremos suas consultas (query).
+### CONSULTAS QUE PODERIAM RESPONDER A QUESTÃO INICIAL
+Para responder à pergunta sobre as tecnologias que as empresas parceiras estão utilizando e quem são seus colaboradores, podemos criar um script SQL para definir o banco de dados com as entidades: 🏬Empresa, ⚛️Tecnologia, 🧑‍💼Colaborador e a tabela de junção entre 🏬Empresa e ⚛️Tecnologia,em seguida criaremos suas consultas (query).
 
 ---
 ##### Criação do Banco de Dados e Tabelas
