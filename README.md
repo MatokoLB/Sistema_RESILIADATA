@@ -1,5 +1,5 @@
 # 💻Sistema_RESILIADATA
-Olá! Bem-vindo ao Sistema RESILIADATA, um projeto que desenvolvi para ajudar a avaliar as tecnologias utilizadas pelas empresas parceiras e seus colaboradores. O sistema oferece uma abordagem organizada para gerenciar e analisar os dados das empresas, tecnologias e colaboradores, proporcionando insights valiosos para decisões mais informadas. O objetivo é fornecer uma visão clara e precisa de como as empresas estão operando em termos de tecnologia e recursos humanos.
+Olá! Bem-vindo ao Sistema RESILIADATA, um projeto denvolvido para ajudar a avaliar as tecnologias utilizadas pelas empresas parceiras e seus colaboradores. O sistema oferece uma abordagem organizada para gerenciar e analisar os dados das empresas, tecnologias e colaboradores, proporcionando insights valiosos para decisões mais informadas. O objetivo é fornecer uma visão clara e precisa de como as empresas estão operando em termos de tecnologia e recursos humanos.
 
 ### BREVE INTRODUÇÃO MODELAGEM DE BANCO DE DADOS 🐧[Tux]
 <details>
@@ -323,9 +323,9 @@ Agradeço por ler todo o projeto e espero que tenha ajudado a ampliar seu conhec
 
 ### Tutores e Empresas do Projeto:
 Conheça quem auxiliou no desenvolvimento do projeto.
-- Tutor: William Firmino, Software Engine er Full Stack ,Senac RJ
-- Prefeitura do RJ e CNseg: projeto Programadores Cariocas no Mercado Segurador
-- Senac Rj e Resilia - Formação Análise de Dados
+- 🧑🏻‍💻Tutor: <a href="https://www.linkedin.com/in/william-firmino-87a2ba80/" _blank> William Firmino</a>, Software Engine er Full Stack , Senac RJ
+- <img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/9ddfdf72-0319-4821-8bd9-803eff6b3a79"  />Prefeitura do RJ e <img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/69af5344-5a87-4df9-82a2-47497f40c167" />CNseg: Projeto Programadores Cariocas no Mercado Segurador
+- <img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/f41993ca-2065-4e70-8ecf-c0cffd6d8000" />Senac Rj e <img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/3d487119-9d93-4aa0-ac75-ba84ebfc67d3" />Resilia - Formação Análise de Dados
 
 
 ### Artigos e Materiais Complementares
