@@ -1,8 +1,7 @@
 # 💻Sistema_RESILIADATA
-O sistema irá auxiliar na avaliação de quais são as tecnologias que as empresas parceiras 
-estão utilizando e quem são seus colaboradores.
+Olá! Bem-vindo ao Sistema RESILIADATA, um projeto que desenvolvi para ajudar a avaliar as tecnologias utilizadas pelas empresas parceiras e seus colaboradores. O sistema oferece uma abordagem organizada para gerenciar e analisar os dados das empresas, tecnologias e colaboradores, proporcionando insights valiosos para decisões mais informadas. O objetivo é fornecer uma visão clara e precisa de como as empresas estão operando em termos de tecnologia e recursos humanos.
 
-### BREVE INTRODUÇÃO MODELAGEM DE BANCO DE DADOS 🐧[Tux]: 
+### BREVE INTRODUÇÃO MODELAGEM DE BANCO DE DADOS 🐧[Tux]
 <details>
  
 ### O que é Modelagem de Dados?
@@ -129,7 +128,7 @@ id | nome | area
 1 | "Python" | "dados" 
 2 | "React" | "info@datasolutions.com" 
 
-
+---
 
 ##### ∪ Tabela de Junção (⚛️Tecnologia_Empresa🏬)
 
@@ -174,6 +173,21 @@ Dependendo dos requisitos do seu sistema, Podemos adicionar mais atributos para 
 - data_nascimento (date📆): Data de nascimento do colaborador.
 - telefone (varchar🔡): Número de telefone do colaborador.
 ```
+
+
+## 📝MODELO CONCEITUAL ATUALIZADO
+
+<div align="center">
+<img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/09947cd6-2c96-422f-9ae8-763ced613282" width="700px"/>
+</div>
+
+
+## 🕹️MODELO LÓGICO ATUALIZADO
+<div align="center">
+<img src="https://github.com/MatokoLB/Sistema_RESILIADATA/assets/112680379/b724aef4-39f8-4d01-8bcf-7ef7bca82e08" width="700px"/>
+</div>
+
+
 </details>
 
 
@@ -220,7 +234,7 @@ CREATE TABLE Empresa_Tecnologia (
 
 
 ```
-
+---
 
 ##### Script de Alimentação de Dados
 ```
@@ -250,8 +264,7 @@ VALUES
 ```
 ---
 
-##### Queries para Responder à Pergunta
-Query para listar as tecnologias que as empresas estão utilizando:
+##### Consulta para listar as tecnologias que as empresas estão utilizando:
 
 ```
 SELECT 
@@ -268,9 +281,17 @@ JOIN
 ```
 Essa query junta as tabelas Empresa, Empresa_Tecnologia e Tecnologia para listar as tecnologias que as empresas estão utilizando, incluindo o nome da empresa, o nome da tecnologia e a área da tecnologia.
 
+###### POSSÍVEL RESULTADO:
+
+Empresa | Tecnologia | Área 
+:--------- | :------: | :-------: 
+"Tech Innovators" | "Python" | "Dados" 
+"Tech Innovators" | "React" | "Webdev" 
+"Data Solutions" | "SEO Tools" | "Marketing"
+
 ---
 
-##### Query para listar os colaboradores de cada empresa
+##### Consulta para listar os colaboradores de cada empresa:
 
 ```
 SELECT
@@ -284,4 +305,33 @@ JOIN
     Colaborador c ON e.id_empresa = c.id_empresa;
 
 ```
-Essa query junta as tabelas Empresa e Colaborador para listar os colaboradores de cada empresa, incluindo o nome da empresa, o nome do colaborador, o CPF do colaborador e o email do colaborador.
+Essa consulta junta as tabelas Empresa e Colaborador para listar os colaboradores de cada empresa, incluindo o nome da empresa, o nome do colaborador, o CPF do colaborador e o email do colaborador.
+
+###### POSSÍVEL RESULTADO:
+
+Empresa | Nome do Colaborador | CPF | Email 
+:--------- | :------: | :-------: | :-------: 
+"Tech Innovators" | "João Silva" | "12345678900" | "joao.silva@techinnovators.com" 
+"Data Solutions" | "Maria Souza" | "98765432100" | "maria.souza@datasolutions.com" 
+"Tech Innovators" | "Carlos Mendes" | "32165498700" | "carlos.mendes@techinnovators.com" 
+"Data Solutions" | "Ana Paula" | "65432198700" | "ana.paula@datasolutions.com" 
+
+---
+
+## CONSIDERAÇÕES FINAIS
+Agradeço por ler todo o projeto e espero que tenha ajudado a ampliar seu conhecimento sobre modelagem de dados. Se precisar de mais informações ou de qualquer suporte adicional, fique à vontade para entrar em contato comigo.
+
+### Tutores e Empresas do Projeto:
+Conheça quem auxiliou no desenvolvimento do projeto.
+- Tutor: William Firmino, Software Engine er Full Stack ,Senac RJ
+- Prefeitura do RJ e CNseg: projeto Programadores Cariocas no Mercado Segurador
+- Senac Rj e Resilia - Formação Análise de Dados
+
+
+### Artigos e Materiais Complementares
+
+- <a href="https://www.resilia.com.br/blog/analista-de-dados-o-que-faz-salario-e-como-atuar" _blank> Analista de Dados: o que faz, quanto ganha e como começar na profissão </a>
+
+- <a href="https://www.devmedia.com.br/guia/modelagem-de-dados/34654" _blank>Guia Completo de Modelagem de Banco de Dados</a> - DevMedia: Este guia abrange desde os primeiros passos com bancos pequenos até a modelagem para bancos Big Data.
+
+
